@@ -20,6 +20,7 @@ public class PaisController {
     public ArrayList<PaisModel> mostrarPaises(){
         return paisService.obtenerPaises();
     }
+
     @GetMapping("/{id}")
     public Optional<PaisModel> obtenerPorId(@PathVariable("id") Integer id){
         return paisService.obtenerPais(id);
